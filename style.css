@@ -1,0 +1,232 @@
+/* ====basic setting==== */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://picsum.photos/id/1068/7117/4090");
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 30px auto;
+  z-index: 100;
+  position: relative;
+}
+h2,
+label,
+span {
+  font-weight: bold;
+}
+.valid-feedback {
+  font-size: 16px;
+  font-weight: bold;
+}
+.invalid-feedback {
+  font-size: 16px;
+  font-weight: bold;
+}
+.form-check-label {
+  background-color: #68c5f7;
+}
+/* ====section:Basic information input==== */
+#basicInfo {
+  display: none;
+  position: relative;
+}
+#basicInfo.container {
+  position: relative;
+  color: #000;
+  z-index: 100;
+}
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.fa-asterisk {
+  font-size: 12px;
+  color: red;
+}
+.card-theme span {
+  margin-right: 20px;
+}
+
+/* ====section:Demo name card==== */
+#nameCard-demo {
+  display: block;
+  position: relative;
+}
+#demoCard-content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.left-col {
+  flex-basis: 100%;
+  padding-right: 20px;
+  padding: 20px 5%;
+}
+.right-col {
+  width: 100%;
+  padding: 20px 5%;
+  /* max-height: 30%; */
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s linear;
+}
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.demoCard {
+  margin: 0 auto;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+.light-theme {
+  color: #000;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+.dark-theme {
+  color: #fff;
+  background-color: #285bad;
+  transition: all 0.5s linear;
+}
+.hr-dark {
+  border: 0.5px solid #000;
+  transition: all 0.5s linear;
+}
+.hr-light {
+  border: 0.5px solid #fff;
+  transition: all 0.5s linear;
+}
+/* left-col子元素 */
+.your-name {
+  font-size: 24px;
+}
+.your-email {
+  font-size: 16px;
+}
+.your-description {
+  font-size: 16px;
+}
+/* right-col子元素 */
+.your-photo {
+  margin-top: 80px;
+  width: 100%;
+  max-height: 80%;
+  border-radius: 5px;
+}
+
+/* ====section3:Create name card==== */
+#nameCard-create {
+  display: none;
+  position: relative;
+}
+
+#nameCard-content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.nameCard {
+  margin: 0 auto;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+/* left-col子元素 */
+.your-name-1 {
+  font-size: 24px;
+}
+.your-email-1 {
+  font-size: 16px;
+}
+.your-description-1 {
+  font-size: 16px;
+}
+/* right-col子元素 */
+.your-photo-1 {
+  margin-top: 80px;
+  width: 100%;
+  max-height: 80%;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  #demoCard-content {
+    display: flex;
+    flex-direction: row;
+  }
+  #nameCard-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .left-col {
+    flex-basis: 70%;
+    padding-right: 20px;
+    padding: 20px 3%;
+  }
+  .right-col {
+    width: 30%;
+    padding: 20px 3%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #demoCard-content {
+    display: flex;
+    flex-direction: row;
+  }
+  #nameCard-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .left-col {
+    flex-basis: 70%;
+    padding-right: 20px;
+    padding: 20px 5%;
+  }
+  .right-col {
+    width: 30%;
+    padding: 20px 5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #demoCard-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+  }
+
+  #nameCard-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .left-col {
+    flex-basis: 70%;
+    padding-right: 20px;
+    padding: 20px 5%;
+  }
+  .right-col {
+    width: 30%;
+    padding: 20px 5%;
+  }
+}
